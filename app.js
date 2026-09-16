@@ -179,63 +179,124 @@
 
 //============================================================
 
-let duz = 0;
-let sehv = 0;
+// let duz = 0;
+// let sehv = 0;
 
-for (let i = 1; i <= 5; i++) {
-  if (i === 1) {
-    let cavab = prompt(
-      "1. İşıqforun qırmızı işığı yanarkən sürücü nə etməlidir?\nA) Sürəti artırıb keçməlidir\nB) Dayanmalıdır\nC) Sürəti azaldıb hərəkəti davam etdirməlidir",
-    );
-    if (cavab === "B" || cavab === "b") {
-      duz++;
-    } else {
-      sehv++;
-    }
-  } else if (i === 2) {
-    let cavab = prompt(
-      "2. Yaşayış məntəqələrində minik avtomobilləri üçün maksimum sürət həddi nə qədərdir?\nA) 60 km/saat\nB) 90 km/saat\nC) 110 km/saat",
-    );
-    if (cavab === "A" || cavab === "a") {
-      duz++;
-    } else {
-      sehv++;
-    }
-  } else if (i === 3) {
-    let cavab = prompt(
-      "3. Təhlükəsizlik kəmərindən istifadə ilə bağlı hansı qayda düzgündür?\nA) Yalnız sürücü kəmər bağlamalıdır\nB) Yalnız ön oturacaqdakı sərnişin kəmər bağlamalıdır\nC) Sürücü və bütün sərnişinlər kəmər bağlamalıdır",
-    );
-    if (cavab === "C" || cavab === "c") {
-      duz++;
-    } else {
-      sehv++;
-    }
-  } else if (i === 4) {
-    let cavab = prompt(
-      "4. Dairəvi hərəkətdə (üstünlük nişanları yoxdursa) üstünlük kimdədir?\nA) Dairədə olan nəqliyyat vasitəsində\nB) Dairəyə daxil olan nəqliyyat vasitəsində\nC) Sürəti daha yüksək olan nəqliyyat vasitəsində",
-    );
-    if (cavab === "A" || cavab === "a") {
-      duz++;
-    } else {
-      sehv++;
-    }
-  } else if (i === 5) {
-    let cavab = prompt(
-      "5. Avtomobili sərxoş halda idarə etmək barədə hansı hökm doğrudur?\nA) Qəti qadağandır\nB) Yalnız yaxın məsafələrə icazə verilir\nC) Yalnız gecə saatlarında icazə verilir",
-    );
-    if (cavab === "A" || cavab === "a") {
-      duz++;
-    } else {
-      sehv++;
-    }
-  }
-}
+// for (let i = 1; i <= 5; i++) {
+//   if (i === 1) {
+//     let cavab = prompt(
+//       "1. İşıqforun qırmızı işığı yanarkən sürücü nə etməlidir?\nA) Sürəti artırıb keçməlidir\nB) Dayanmalıdır\nC) Sürəti azaldıb hərəkəti davam etdirməlidir",
+//     );
+//     if (cavab === "B" || cavab === "b") {
+//       duz++;
+//     } else {
+//       sehv++;
+//     }
+//   } else if (i === 2) {
+//     let cavab = prompt(
+//       "2. Yaşayış məntəqələrində minik avtomobilləri üçün maksimum sürət həddi nə qədərdir?\nA) 60 km/saat\nB) 90 km/saat\nC) 110 km/saat",
+//     );
+//     if (cavab === "A" || cavab === "a") {
+//       duz++;
+//     } else {
+//       sehv++;
+//     }
+//   } else if (i === 3) {
+//     let cavab = prompt(
+//       "3. Təhlükəsizlik kəmərindən istifadə ilə bağlı hansı qayda düzgündür?\nA) Yalnız sürücü kəmər bağlamalıdır\nB) Yalnız ön oturacaqdakı sərnişin kəmər bağlamalıdır\nC) Sürücü və bütün sərnişinlər kəmər bağlamalıdır",
+//     );
+//     if (cavab === "C" || cavab === "c") {
+//       duz++;
+//     } else {
+//       sehv++;
+//     }
+//   } else if (i === 4) {
+//     let cavab = prompt(
+//       "4. Dairəvi hərəkətdə (üstünlük nişanları yoxdursa) üstünlük kimdədir?\nA) Dairədə olan nəqliyyat vasitəsində\nB) Dairəyə daxil olan nəqliyyat vasitəsində\nC) Sürəti daha yüksək olan nəqliyyat vasitəsində",
+//     );
+//     if (cavab === "A" || cavab === "a") {
+//       duz++;
+//     } else {
+//       sehv++;
+//     }
+//   } else if (i === 5) {
+//     let cavab = prompt(
+//       "5. Avtomobili sərxoş halda idarə etmək barədə hansı hökm doğrudur?\nA) Qəti qadağandır\nB) Yalnız yaxın məsafələrə icazə verilir\nC) Yalnız gecə saatlarında icazə verilir",
+//     );
+//     if (cavab === "A" || cavab === "a") {
+//       duz++;
+//     } else {
+//       sehv++;
+//     }
+//   }
+// }
 
+// alert("İmtahan bitdi! Düz cavab: " + duz + "Səhv cavab: " + sehv);
 
-alert("İmtahan bitdi! Düz cavab: " + duz + "Səhv cavab: " + sehv);
+// if (duz < 4) {
+//   alert("Kəsildiniz!");
+// } else {
+//   alert("Təbriklər, imtahanı keçdiniz!");
+// }
 
-if (duz < 4) {
-  alert("Kəsildiniz!");
+//==================================================================
+
+// let a = ["Alma", "armud", "nar"];
+
+// a.push("banan");
+// console.log(a);
+
+//----------------------------------------------------------------
+
+// let a = ["amil", "rəşad", "cefer", "fuad", "elvin"];
+
+// for (let i = 0; i < a.length; i++) {
+//   console.log(a[i]);
+// }
+
+//-----------------------------------------------------------------
+
+// let prices = [10, 25, 15, 40, 30];
+// prices[1] = 20;
+
+// console.log(prices);
+
+//----------------------------------------------------------------
+
+// let movies = ["Inception", "Interstellar", "Avatar", "Titanic"];
+// let a = prompt();
+
+// if (movies.includes(a) == true) {
+//   console.log("Bu film artıq siyahıdadır");
+// } else {
+//   movies.push(a);
+// }
+
+// console.log(movies);
+
+//---------------------------------------------------------------
+
+// let cart = ["iPhone", "AirPods", "Mouse"];
+// let a = prompt("Secdiyin mehsulu yaz: " + cart);
+
+// if (cart.includes(a)) {
+//   let b = cart.indexOf(a);
+//   cart.splice(b, 1);
+// } else {
+//   cart.push(a);
+// }
+// console.log(cart);
+
+//=============================================================
+
+//home work
+
+let salaries = [800, 1200, 1500, 950, 2000];
+let newSalaries = salaries.map((salaries) => salaries * 1.15);
+
+if (newSalaries.every((salaries) => salaries > 900)) {
+  console.log("hər kəs qəşəng maaş alır");
 } else {
-  alert("Təbriklər, imtahanı keçdiniz!");
+  console.log("vəziyyət pisdir");
 }
+console.log(newSalaries);
