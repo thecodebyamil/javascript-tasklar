@@ -291,12 +291,74 @@
 
 //home work
 
-let salaries = [800, 1200, 1500, 950, 2000];
-let newSalaries = salaries.map((salaries) => salaries * 1.15);
+// let salaries = [800, 1200, 1500, 950, 2000];
+// let newSalaries = salaries.map((salaries) => salaries * 1.15);
 
-if (newSalaries.every((salaries) => salaries > 900)) {
-  console.log("hər kəs qəşəng maaş alır");
-} else {
-  console.log("vəziyyət pisdir");
+// if (newSalaries.every((salaries) => salaries > 900)) {
+//   console.log("hər kəs qəşəng maaş alır");
+// } else {
+//   console.log("vəziyyət pisdir");
+// }
+// console.log(newSalaries);
+
+//============================================================
+
+// let telebeler = [];
+
+// while (true) {
+//   let a = prompt("telebe adlarini daxil et");
+//   if (a == "bitdi") {
+//     break;
+//   }
+//   telebeler.push(a);
+// }
+// telebeler.sort();
+// console.log(telebeler);
+
+//-----------------------------------------------------------
+
+// let eded = [15, 3, 8, 2, 10];
+// let reqem = eded.sort((a, b) => a - b);
+
+// let hasil = reqem.at(-1) * reqem.at(0);
+// let cixma = reqem.at(-1) - reqem.at(0);
+// let netice = hasil - cixma;
+// console.log(reqem);
+// console.log(hasil);
+// console.log(cixma);
+// console.log(netice);
+
+//--------------------------------------------------------
+
+// let products = [
+//   ["dell", 600],
+//   ["samsung", 700],
+//   ["lenovo", 550],
+//   ["hp", 800],
+//   ["asus", 650],
+// ];
+
+// products.forEach((x) => {
+//   let a = x.join(" - ") + " AZN";
+//   console.log(a);
+// });
+
+//========================================================
+
+let numbers = [4, 7, 2, 9, 1];
+alert(numbers);
+
+let tapdi = false;
+
+for (let i = 0; i < 3; i++) {
+  let a = prompt("reqemleri daxil et");
+
+  if (a === numbers.join(",")) {
+    alert("Aferin!");
+    tapdi = true;
+    break;
+  }
 }
-console.log(newSalaries);
+if (!tapdi) {
+  alert("Uduzdunuz!");
+}
