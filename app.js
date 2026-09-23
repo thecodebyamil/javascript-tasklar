@@ -538,7 +538,8 @@ const addXP = () => {
   do {
     a = prompt("XP qazanmaq üçün 'point', çıxmaq üçün 'exit' yazın:");
     if (a === "point") {
-      let b = (player.xp += Math.ceil(Math.random() * 50));
+      let b = Math.ceil(Math.random() * 50);
+      player.xp += b;
       console.log(
         `+${b} XP qazandınız! Cari XP: ${player.xp}, Level: ${player.level}`,
       );
