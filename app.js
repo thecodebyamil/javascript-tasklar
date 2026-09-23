@@ -533,34 +533,24 @@ let player = {
   level: 1,
 };
 
-const checkLevel = () => {
-  if (player.xp >= 100) {
-    player.level++;
-    player.xp = 0;
-    if (player.level === 5) {
-      console.log("Mənim Rise of Kingdom-da 80 milyon gücüm var!");
-    }
-  }
-};
-
 const addXP = () => {
-  let a = prompt("XP qazanmaq üçün 'point', çıxmaq üçün 'exit' yazın:");
-  while (a !== "exit") {
+  let a;
+  do {
+    a = prompt("XP qazanmaq üçün 'point', çıxmaq üçün 'exit' yazın:");
     if (a === "point") {
-      let b = Math.ceil(Math.random() * 50);
-      player.xp += b;
+      let b = (player.xp += Math.ceil(Math.random() * 50));
       console.log(
         `+${b} XP qazandınız! Cari XP: ${player.xp}, Level: ${player.level}`,
       );
-      checkLevel();
+      if (player.xp >= 100) {
+        player.level++;
+        player.xp = 0;
+        if (player.level === 5)
+          console.log("Mənim Rise of Kingdom-da 80 milyon gücüm var!");
+      }
     }
-    a = prompt("XP qazanmaq üçün 'point', çıxmaq üçün 'exit' yazın:");
-  }
-};
-
-const showPlayer = () => {
-  console.log(player);
+  } while (a !== "exit");
 };
 
 addXP();
-showPlayer();
+console.log(player);
