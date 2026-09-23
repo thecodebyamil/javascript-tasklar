@@ -345,20 +345,222 @@
 
 //========================================================
 
-let numbers = [4, 7, 2, 9, 1];
-alert(numbers);
+// let numbers = [4, 7, 2, 9, 1];
+// alert(numbers);
 
-let tapdi = false;
+// let tapdi = false;
 
-for (let i = 0; i < 3; i++) {
-  let a = prompt("reqemleri daxil et");
+// for (let i = 0; i < 3; i++) {
+//   let a = prompt("reqemleri daxil et");
 
-  if (a === numbers.join(",")) {
-    alert("Aferin!");
-    tapdi = true;
-    break;
+//   if (a === numbers.join(",")) {
+//     alert("Aferin!");
+//     tapdi = true;
+//     break;
+//   }
+// }
+// if (!tapdi) {
+//   alert("Uduzdunuz!");
+// }
+
+//=======================================================
+
+// let ad = prompt("Ad daxil et!");
+// let soyad = prompt("Soyad daxil et!");
+
+// let herf = ad.charAt(0);
+// console.log(herf + "." + soyad);
+
+//------------------------------------------------------
+
+// let a = prompt("Palindrom sozleri daxil et!");
+
+// let kicikHerfler = a.toLowerCase();
+// let b = kicikHerfler.split("").reverse().join("");
+
+// if (kicikHerfler === b) {
+//   console.log("Palindromdu");
+// } else {
+//   console.log("Palindrom deyil");
+// }
+// console.log(a);
+
+//-----------------------------------------------------
+
+// let a =
+//   "Azərbaycan          Respublikasının    Dövlət                 himni boşluqları sil düzgün cümləni yenidən yaz         ";
+
+// let b = a.split(" ").filter(Boolean).join(" ");
+// console.log(a)
+// console.log(b);
+
+//======================================================
+
+// let arr = [];
+
+// while (true) {
+//   let input = prompt("Eded daxil et");
+
+//   if (input === "Cancel" || input.trim() === "") {
+//     break;
+//   }
+//   arr.push(+input);
+// }
+// let max = Math.max(...arr);
+// let min = Math.min(...arr);
+// console.log(arr);
+// console.log(max);
+// console.log(min);
+// console.log(`${max} x ${min} = ${max * min}`);
+
+//-----------------------------------------------------
+
+// let ad = prompt("Ad daxil et!");
+// let yash = +prompt("Yaş daxil et!");
+// let city = ["Dubay", "London", "Tokio", "Nyu-York"];
+// let car = ["Porsche", "BMW", "Mercedes", "Tesla"];
+// let work = ["Proqramçı", "Biznesmen", "Mühəndis", "Dizayner"];
+// let gelecekYash = yash + 5;
+
+// let randomCity = Math.floor(Math.random() * city.length);
+// let randomCar = Math.floor(Math.random() * car.length);
+// let randomWork = Math.floor(Math.random() * work.length);
+
+// console.log(
+//   `Salam ${ad}, 5 ildən sonra siz ${gelecekYash} yaşında olacaqsınız, ${city[randomCity]} şəhərində yaşayacaqsınız, ${car[randomCar]} idarə edəcəksiniz və ${work[randomWork]} kimi çalışacaqsınız.`,
+// );
+
+//======================================================
+
+// let arr = [3, 6, 2, 9, 8];
+
+// function push(yeniDeyer) {
+//   arr[arr.length] = yeniDeyer;
+//   console.log(arr.flat(1));
+//   return arr.length;
+// }
+
+// push([4,7,8,9,2,4]);
+
+//---------------------------------------------------------
+
+// let arr = [2, 4, 6, 3, 9];
+// const unShift = (x) => {
+//   for (let i = arr.length - 1; i >= 0; i--) {
+//     arr[i + 1] = arr[i];
+//   }
+//   arr[0] = x;
+//   console.log(arr);
+//   return arr.length;
+// };
+
+// unShift(5);
+
+//-----------------------------------------------------------
+
+// let arr = [1, 2, 3, 4, 5];
+
+// function del(arr, x) {
+//   arr.length = arr.length - x;
+//   console.log(arr);
+//   return arr;
+// }
+
+// del(arr, 3);
+
+//-----------------------------------------------------------
+
+// let arr = [1, 2, 3, 4, 5];
+
+// const artir = (arr, baslangic, son, artim) => {
+//   for (let i = baslangic; i <= son; i++) {
+//     arr[i] += artim;
+//   }
+//   console.log(arr);
+//   return arr;
+// };
+// artir(arr, 1, 3, 10);
+
+//===========================================================
+
+// let mehsul = [
+//   {
+//     Title: " Portativ Doldurucu (Powerbank)",
+//     Description: "20000 mAh tutumlu, tezli doldurma dəstəkli xarici batareya",
+//     Price: "65.0 AZN",
+//     Stock: "25 ədəd",
+//   },
+//   {
+//     Title: "Simsiz Qulaqlıq (Wireless Earbuds)",
+//     Description: "Səs-küyü ləğv edən (ANC) funksiyalı blutuz qulaqlıq",
+//     Price: "120.00 AZN",
+//     Stock: "14 ədəd",
+//   },
+//   {
+//     Title: "Mexaniki Klaviatura",
+//     Description: "RGB işıqlandırmalı, göy svitçli oyun klaviaturası",
+//     Price: "89.90 AZN",
+//     Stock: "8 ədəd",
+//   },
+// ];
+
+// const yeniMehsul = () => {
+//   let title = prompt("Məhsulun adını daxil edin:");
+//   let description = prompt("Məhsulun təsvirini daxil edin:");
+//   let price = prompt("Məhsulun qiymətini daxil edin:");
+//   let stock = prompt("Məhsulun sayını daxil edin:");
+
+//   let obyekt = {
+//     Title: title,
+//     Description: description,
+//     Price: price,
+//     Stock: stock,
+//   };
+
+//   mehsul.push(obyekt);
+//   console.log(mehsul);
+// };
+
+// yeniMehsul();
+
+//===================================================================
+
+//home task
+
+let player = {
+  name: "Oyuncu 1",
+  xp: 0,
+  level: 1,
+};
+
+const checkLevel = () => {
+  if (player.xp >= 100) {
+    player.level++;
+    player.xp = 0;
+    if (player.level === 5) {
+      console.log("Mənim Rise of Kingdom-da 80 milyon gücüm var!");
+    }
   }
-}
-if (!tapdi) {
-  alert("Uduzdunuz!");
-}
+};
+
+const addXP = () => {
+  let a = prompt("XP qazanmaq üçün 'point', çıxmaq üçün 'exit' yazın:");
+  while (a !== "exit") {
+    if (a === "point") {
+      let b = Math.ceil(Math.random() * 50);
+      player.xp += b;
+      console.log(
+        `+${b} XP qazandınız! Cari XP: ${player.xp}, Level: ${player.level}`,
+      );
+      checkLevel();
+    }
+    a = prompt("XP qazanmaq üçün 'point', çıxmaq üçün 'exit' yazın:");
+  }
+};
+
+const showPlayer = () => {
+  console.log(player);
+};
+
+addXP();
+showPlayer();
